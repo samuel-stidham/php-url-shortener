@@ -2,6 +2,7 @@
     "name": "samuel-stidham/url-shortener",
     "type": "library",
     "license": "MIT",
+    "description": "Minimal PSR-4 PHP URL shortener with SQLite storage, CLI app, and full PHPUnit coverage — clean, testable, and framework-agnostic.",
     "autoload": {
         "psr-4": {
             "SamuelStidham\\UrlShortener\\": "src/"
