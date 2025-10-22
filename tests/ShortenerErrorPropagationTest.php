@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace SamuelStidham\UrlShortener\Tests;
 
-use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use SamuelStidham\UrlShortener\Shortener;
 use SamuelStidham\UrlShortener\Contracts\UrlRepository;
-use SamuelStidham\UrlShortener\Exception\DuplicateCodeException;
 use SamuelStidham\UrlShortener\Exception\DatabaseException;
+use SamuelStidham\UrlShortener\Exception\DuplicateCodeException;
+use SamuelStidham\UrlShortener\Shortener;
 
 /**
  * Test error propagation in the Shortener service.

@@ -6,8 +6,8 @@ namespace SamuelStidham\UrlShortener\Tests\Integration;
 
 use PDO;
 use PHPUnit\Framework\TestCase;
-use SamuelStidham\UrlShortener\Shortener;
 use SamuelStidham\UrlShortener\Database\SQLite\UrlRepo;
+use SamuelStidham\UrlShortener\Shortener;
 
 final class ShortenerWithSQLiteTest extends TestCase
 {

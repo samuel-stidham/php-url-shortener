@@ -5,12 +5,8 @@ declare(strict_types=1);
 namespace SamuelStidham\UrlShortener\Tests\Database\SQLite;
 
 use PDO;
-use PDOException;
-use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use SamuelStidham\UrlShortener\Database\SQLite\UrlRepo;
-use SamuelStidham\UrlShortener\Exception\DuplicateCodeException;
-use SamuelStidham\UrlShortener\Exception\DatabaseException;
 
 /**
  * Test edge cases for the SQLite UrlRepo.

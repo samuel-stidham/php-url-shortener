@@ -7,8 +7,8 @@ namespace SamuelStidham\UrlShortener\Database\SQLite;
 use PDO;
 use PDOException;
 use SamuelStidham\UrlShortener\Contracts\UrlRepository;
-use SamuelStidham\UrlShortener\Exception\DuplicateCodeException;
 use SamuelStidham\UrlShortener\Exception\DatabaseException;
+use SamuelStidham\UrlShortener\Exception\DuplicateCodeException;
 
 /**
  * URL Repository

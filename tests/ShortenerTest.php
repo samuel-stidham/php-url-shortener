@@ -6,7 +6,6 @@ namespace SamuelStidham\UrlShortener\Tests;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use SamuelStidham\UrlShortener\Contracts\UrlRepository;
 use SamuelStidham\UrlShortener\Shortener;
 
 /**
@@ -47,30 +46,5 @@ final class ShortenerTest extends TestCase
 
         $this->expectException(InvalidArgumentException::class);
         $svc->shorten('not-a-url');
-    }
-}
-
-/**
- * Simple in-memory fake implementing UrlRepository.
- * Stores saved mappings in $saved for assertions.
- */
-final class FakeUrlRepository implements UrlRepository
-{
-    /** @var array<string,string> */
-    public array $saved = [];
-
-    public function save(string $code, string $url): void
-    {
-        $this->saved[$code] = $url;
-    }
-
-    public function findByCode(string $code): ?string
-    {
-        return $this->saved[$code] ?? null;
-    }
-
-    public function incrementClicks(string $code): void
-    {
-        // No-op for test purposes
     }
 }
