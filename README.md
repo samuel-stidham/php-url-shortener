@@ -40,13 +40,14 @@ tree -I vendor/ -I reports/
     ├── Database
     │   └── SQLite
     │       └── UrlRepoTest.php
+    ├── FakeUrlRepository.php
     ├── Integration
     │   └── ShortenerWithSQLiteTest.php
     ├── ShortenerErrorPropagationTest.php
     ├── ShortenerTest.php
     └── UrlRepoEdgeCasesTest.php
 
-12 directories, 17 files
+12 directories, 18 files
 ```
 
 ## Requirements
