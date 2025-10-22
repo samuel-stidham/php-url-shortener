@@ -1,0 +1,8 @@
+/vendor/
+.php-cs-fixer.cache
+.phpunit.result.cache
+.phpunit.cache/
+reports/
+phpcs-report.txt
+/database/*.db
+.env
